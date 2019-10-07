@@ -38,8 +38,10 @@ html {
 }
 
 body {
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
 }
 canvas {
 	border: 2px solid black;
