@@ -1,2 +1,3 @@
 # FractalFun
-I am still working, w8 a litle )
+Its my first serious script )) 
+I am  only learning, please, say what u think about it !!!
