@@ -7,16 +7,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body onload="draw();">
+  	<div class="main">
   	<div class="heading">
   	<h1>THE GAME OF CHAOS</h1>
   	<h2>OR....</h2>
   	<h3>The chaos metod to get The Sierpinski triangle</h3>
   	</div>
+  	<div class="text">
   	<p>Whats happend ?</p>
   	<p>In simple words - we take three random points on the plane (A,B,C).Then we take one more in random place (start point). Further we need to get a random number. We will use a "dice roll". Every roll if we get 1 or 2 we will make new start point between old start point and A point. If we get 3 or 4 we will make new start point between old and B points. And if we get 5 or 6 we will make point between old start point and C.</p>
   	<p>This is rules the game of chaos. When I read it at first time I thought that if we make over 10000 iterations then all place inside triangle ABC will be fill.</p>
   	<p>In this momment try to make 5 , 10, 50, 100 and 1000 iterations and look on the graph !!!</p>
   	<p>You see The Sierpinski triangle - one of the types of fractals.</p>
+  	</div>
   	<form id="forms">
     	<input id="btn" type="button" name="btn" value="Go">
     	<input id="iterations" type="text" value="">
@@ -29,5 +32,6 @@
     </form>
     <canvas id="graph" width="500" height="500"></canvas>
     <script src="script.js"></script>   
+    </div>
   </body>
 </html>
