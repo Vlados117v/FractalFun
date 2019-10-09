@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8"/>
     <title>FractalFun</title>
+        <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
   </head>
   <body onload="draw();">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
   	<div class="main">
   	<div class="heading">
   	<h1>THE GAME OF CHAOS</h1>
@@ -21,17 +28,25 @@
   	<p>You see The Sierpinski triangle - one of the types of fractals.</p>
   	</div>
   	<form id="forms">
-    	<input id="btn" type="button" name="btn" value="Go">
-    	<input id="iterations" type="text" value="">
+    	<input class="btn btn-outline-primary" id="btn" type="button" name="btn" value="Go"></br></br>
+    	<input class="form-control" id="iterations" type="text" value="" placeholder="Number of iterations">
     </br>
     <div class="ChangeGraph">
-    	<input id="btn2" type="button" value="ChangeGraph">
-    	<input id="width" type="text" value="">X
-    	<input id="height" type="text" value="">
+    	<input class="btn btn-outline-secondary" id="btn2" type="button" value="ChangeGraph"> </br></br>
+      <div class="form-inline">
+    	<input class="form-control col-1" id="width" type="text" value="">X
+    	<input class="form-control col-1" id="height" type="text" value="">
+      </div>
     </div>		
     </form>
     <canvas id="graph" width="500" height="500"></canvas>
     <script src="script.js"></script>   
     </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+    </div>
+ 	</div>
   </body>
 </html>
